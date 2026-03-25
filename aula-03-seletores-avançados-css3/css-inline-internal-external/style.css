@@ -51,3 +51,56 @@ body{
 .btn-dowload:hover{
     background-color: blueviolet;
 }
+/* FORMATANDO INPUTS DE FOMULÁRIOS */
+input{
+    width: 300px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #2200c9;
+    border-radius: 5px;
+    background-color: aliceblue;
+    color: black;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow o.3s ease;
+}
+input:focus{
+    outline: none;
+    border-color: rgb(0, 136, 255);
+    box-shadow: 0 0 10px rgba(0, 179, 255, 0.5);
+     
+}
+/* SELECIONANDO UMA INPUT PELO SEU TIPO */
+input[type="email"]{
+    background-color: gray;
+    color: white;
+}
+/* CITAÇÕES ESTILIZADAS COM :before E :after */
+.citacao{
+    width: 820px;
+    position: relative;
+    padding: 30px 40px;
+    background-color: #a33a3a;
+    border-left: 5px solid #8cc9e4;
+    font-style: italic;
+    font-size: 20px;
+    margin: 20px 0;
+    color: white;
+}
+.citacao:before{
+    content: ' " ';
+    position: absolute;
+    top: -25px;
+    left: 10px;
+    font-size: 80px;
+    color: aliceblue;
+    opacity: 0.3;
+}
+.citacao:after{
+    content: ' " ';
+    position: absolute;
+    bottom: -60px;
+    right: 20px;
+    font-size: 80px;
+    color: aliceblue;
+    opacity: 0.3;
+}
