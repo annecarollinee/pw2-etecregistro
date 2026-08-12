@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de JavaScript - Aula 07</title>
+</head>
+<body>
+    <h1>Exercício de JavaScript - Aula 07</h1>
+</body>
+
+<script>
+
+    let nome = window.prompt("Digite o seu nome:");
+    let ano = Number(window.prompt("Digite o seu ano de nascimento: "));
+    let cidade = window.prompt("Digite a cidade onde você mora: ");
+    let salario = Number(window.prompt("Digite o seu salário: "));
+    let idade = 2026 - ano;
+    let salarioDolar = salario * 0.19;
+
+    window.alert(`Olá! Seja bem-vindo ${nome}!`);
+    document.write(`O nome do usuário é ${nome}`);
+    document.write(`<br> A(o) usuária(o) tem ${idade} anos `);
+    document.write(`<br> A cidade em que você mora chama-se ${cidade.toUpperCase()}`);
+    document.write(`<br> O seu salário é de ${salario.toLocaleString('pt-br', {style:"currency", currency: "BRL"})}`);
+    document.write(`<br> O seu salário em dólares é ${salarioDolar.toLocaleString('pt-br', {style:"currency", currency: "USD"})}`);
+
+</script>
+</html>
