@@ -1,40 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Introdução ao JavaScript</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Introdução ao JavaScript</h1>
     <p>Eu sou...</p>
-</body>
+  </body>
 
-<!-- JAVASCRIPT INTERNO -->
-<script>
-// Aqui irá o código JavaScript (comentário em linha)
-/* Comentário em bloco */
+  <!-- JAVASCRIPT INTERNO -->
+  <script>
+    // Aqui irá o código JavaScript (comentário em linha)
+    /* Comentário em bloco */
 
-//  DECLARANDO VARIÁVEIS
-// VAR
-    var nome = "Anne";
+    //  DECLARANDO VARIÁVEIS
+    // VAR
+    // var nome = "Anne";
+    // document.write(nome);
+    // document.write("<br>");
+    // SOLICITANDO DADOS AO USUÁRIO
+    var nome = window.prompt("Digite seu nome:");
     document.write(nome);
-    document.write('<br>');
-    nome = "Italo";
-    document.write(nome);
 
-// LET
-    let cidade = "Registro";
-//  let cidade = "Pariquera"; => Não é possível
-    cidade = "São Paulo";
-    document.write('<br>');
-    document.write("Eu moro em "+ cidade + '<br>');
+    // LET
+    let cidade = window.prompt("Digite a sua cidade:");
+    //  let cidade = "Pariquera"; => Não é possível
+    // cidade = "São Paulo";
+    document.write("<br>");
+    document.write("Eu moro em " + cidade + "<br>");
 
-// CONST
-    const idade = 16;
+    // CONST
+    const idade = Number(window.prompt("Digite a sua idade:"));
     // idade = 17; => Não é possível
-    document.write("Tenho " + idade + " anos!");
+    document.write("Tenho " + idade + " anos!" + "<br>");
     // const idade = 18; => Não é possível
 
-</script>
+    // VERIFICANDO O TIPO DAS VARIÁVEIS
+    document.write("O tipo da variável nome é " + typeof (nome));
+    document.write("<br> O tipo da variável idade é " + typeof (idade) + '<br>');
+    // O JAVASCRIPT ATRIBUI OS TIPOS ÀS VARIÁVEIS DE FORMA DINÂMICA
+
+    // EXIBINDO UMA MENSAGEM DE ALERTA AO USUÁRIO
+    window.alert(`Bem-vindo ${nome}!`);
+
+    // SOLCITANDO AO USUÁRIO DOIS NÚMEROS
+    const n1 = Number(window.prompt("Digite um número:"));
+    const n2 = Number(window.prompt("Digite outro número:"));
+    const soma = n1 + n2;
+    // document.write("O resultado da soma é " + soma);
+    document.write(`<br> O resultado da soma de ${n1} + ${n2} é ${soma}`);
+
+    //FORMATANDO STRINGS
+    document.write(`<br> Seu nome em letras maiúsculas: ${nome.toUpperCase()}`);
+    document.write(`<br> Seu nome em letras minúsculas: ${nome.toLocaleLowerCase()}`);
+
+    // FORMATAÇÃO DE NÚMEROS
+    const salario = 2500;
+    document.write(`<br> Salário com casas decimais: ${salario.toFixed(2)}`);
+    document.write(`<br> Salário com casa decimal em vírgula: ${salario.toFixed(2).replace('.', ',')}`);
+
+    //FORMATAÇÃO DE MOEDA
+    document.write(`<br> Salário em real: ${salario.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`);
+    document.write(`<br> Salário em dólar: ${salario.toLocaleString('pt-br', {style: 'currency', currency: 'USD'})}`);
+
+  </script>
 </html>
