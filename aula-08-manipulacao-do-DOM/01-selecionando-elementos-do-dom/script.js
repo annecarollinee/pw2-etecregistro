@@ -23,11 +23,9 @@ const p3 = document.getElementById("roxo");
 p3.style.backgroundColor = "purple";
 p3.innerText = "Selecionando elementos pelo ID";
 
-// const p4 = document.getElementsByName(azul);
-
-const p5 = document.getElementsByClassName("vermelho");
-p5.innerText = "Selecionando elementos pelo CLASSE";
-p5.style.backgroundColor = "red";
+const p4 = document.getElementsByName("azul");
+p4.style.backgroundColor = "blue";
+p4.innerText = "Selecionando elementos pelo NOME";
 
 
 
