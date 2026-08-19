@@ -23,10 +23,18 @@ const p3 = document.getElementById("roxo");
 p3.style.backgroundColor = "purple";
 p3.innerText = "Selecionando elementos pelo ID";
 
-const p4 = document.getElementsByName("azul");
+const p4 = document.getElementsByName("azul")[0];
 p4.style.backgroundColor = "blue";
 p4.innerText = "Selecionando elementos pelo NOME";
 
+const p5 = document.getElementsByClassName("vermelho")[0];
+p5.innerText = "Selecionando elementos pela CLASSE";
+p5.style.backgroundColor = "red";
+
+const p6 = document.querySelector("#seletor");
+p6.innerText = "Selecionando elementos pelo SELETOR";
+p6.style.color = "black";
+p6.style.backgroundColor = "yellow";
 
 
 
