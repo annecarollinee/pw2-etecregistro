@@ -15,6 +15,10 @@
 
 // seu código aqui
 
+const h1 = document.getElementById("titulo");
+h1.innerText = "Título Alterado";
+h1.style.color = "blue";
+
 // ---------------------------------------------------------------------------------
 // Exercício 2
 // Selecione TODOS os elementos com a classe "paragrafo"
@@ -24,6 +28,10 @@
 // ---------------------------------------------------------------------------------
 
 // seu código aqui
+
+const pa = document.querySelectorAll(".paragrafo")
+pa[0].style.backgroundColor = "yellow";
+pa[1].style.backgroundColor = "yellow";
 
 // ---------------------------------------------------------------------------------
 // Exercício 3
@@ -35,13 +43,21 @@
 
 // seu código aqui
 
+const ca = document.querySelector("#caixa");
+ca.innerText = "Conteúdo atualizado";
+ca.style.border = "3px solid red";
+ca.style.fontSize = "20px";
+
 // ---------------------------------------------------------------------------------
 // Exercício 4
-// Selecione os itens da lista (id"lista)
+// Selecione os itens da lista (id"lista")
 // - usando querySelector e mude seu texto para "Item alterado"
 // ---------------------------------------------------------------------------------
 
 // seu código aqui
+
+const li = document.querySelector("#lista");
+li.innerText = "Item alterado";
 
 // ---------------------------------------------------------------------------------
 // Exercício 5
@@ -52,3 +68,8 @@
 // ---------------------------------------------------------------------------------
 
 // seu código aqui
+
+const btn = document.querySelector("#botao");
+btn.innerText = "Clique aqui";
+btn.style.backgroundColor = "green";
+btn.style.color = "white";
