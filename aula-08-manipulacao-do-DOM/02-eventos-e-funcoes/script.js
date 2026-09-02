@@ -4,6 +4,7 @@ const caixaMagica = document.getElementById("caixaMagica");
 //  "Escutando" os eventos realizados com o elemnto da DOM
 caixaMagica.addEventListener("mouseenter", entradaMouse);
 caixaMagica.addEventListener("mouseout", saidaMouse);
+caixaMagica.addEventListener("click", clicar)
 
 // Criando uma função
 function entradaMouse(){
@@ -13,4 +14,8 @@ function entradaMouse(){
 function saidaMouse(){
     caixaMagica.innerText = "Tchau, até breve! :(";
     caixaMagica.style.backgroundColor = "red";
+}
+function clicar(){
+    caixaMagica.innerText = "Interaja com a caixa!"
+    caixaMagica.style.backgroundColor = "purple";
 }
