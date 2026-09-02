@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáfaro com JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Semáfaro com JavaScript</h1>
+
+    <div class="container">
+        <div class="luz" id="parar"></div>
+        <div class="luz" id="atencao"></div>
+        <div class="luz" id="siga"></div>
+        <br>
+        <!-- Botões -->
+         <div>
+            <button onclick="parar()" id="btnPare">Pare!</button>
+            <button onclick="atencao()" id="btnAtencao">Atenção!</button>
+            <button onclick="siga()" id="btnSiga">Siga!</button>
+         </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
