@@ -1,5 +1,4 @@
 // Capturando as inputs
-
     const inputN1 = document.querySelector('input#n1');
     const inputN2 = document.querySelector('input#n2');
     const resultado = document.querySelector('div#resultado');
