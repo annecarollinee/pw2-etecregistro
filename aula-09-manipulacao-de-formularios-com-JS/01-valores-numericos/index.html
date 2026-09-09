@@ -8,13 +8,24 @@
 </head>
 <body>
     <h1>Calculadora com Javascript</h1>
+    <hr>
+
     <!-- Campos da calculadora -->
+     <p>Insira dois números</p>
     <input type="number" name="n1" id="n1" min="0" max="99">
+    <strong>e</strong>
     <input type="number" name="n2" id="n2" min="0" max="99">
     <br> <br>
-    <input type="button" value="Somar" onclick="somar()">
+    <p>Selecione a operação</p>
+    <input type="button" value="+" onclick="somar()">
+    <input type="button" value="-" onclick="subtrair()">
+    <input type="button" value="×" onclick="multiplicar()">
+    <input type="button" value="÷" onclick="dividir()">
+
     <!-- Área de resultado -->
-     <div id="resultado"></div>
+     <p>Resultado</p>
+    <input type="number" value="" id="resultado"> <br> <br>
+    <input type="button" value="Limpar" onclick="limpar()">
 
     <script src="script.js"></script>
 </body>
