@@ -17,15 +17,17 @@
     <input type="number" name="n2" id="n2" min="0" max="99">
     <br> <br>
     <p>Selecione a operação</p>
-    <input type="button" value="+" onclick="somar()">
-    <input type="button" value="-" onclick="subtrair()">
-    <input type="button" value="×" onclick="multiplicar()">
-    <input type="button" value="÷" onclick="dividir()">
+    <div id="conta">
+    <input type="button" value="+" onclick="somar()" class="botao">
+    <input type="button" value="-" onclick="subtrair()" class="botao">
+    <input type="button" value="×" onclick="multiplicar()" class="botao">
+    <input type="button" value="÷" onclick="dividir()" class="botao">
+    </div>
 
     <!-- Área de resultado -->
      <p>Resultado</p>
     <input type="number" value="" id="resultado"> <br> <br>
-    <input type="button" value="Limpar" onclick="limpar()">
+    <input type="button" value="Limpar" onclick="limpar()" id="limpar">
 
     <script src="script.js"></script>
 </body>
