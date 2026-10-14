@@ -4,73 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechNova Solutions</title>
-    <!-- Importação do CSS do Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--Importação do Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> 
 </head>
 <body>
-    <div class="container my-4">
-        <header class="text-center position-relative mb-5">
 
-            <!-- Botão Switch de Tema (Canto Superior Direito) -->
-        <div class="form-check form-switch position-absolute top-0 end-0 mt-2">
-            <input class="form-check-input" type="checkbox" role="switch" id="themeSwitch" checked>
-            <label class="form-check-label" for="themeSwitch">Modo Escuro</label>
-        </div>
+        <!--Botão para alterar o tema-->
+        <!-- Botão Switch (Canto superior direito) -->
+       <div class="form-check form-switch position-absolute top-0 end-0 mt-2">
+       <input class="form-check-input" type="checkbox" role="switch" id="themeSwitch" checked>
+       <label class="form-check-label" for="themeSwitch">Modo Escuro</label>
+       </div>
 
-            <h1 class="mb-2 text-primary mt-4">TechNova Solutions</h1>
-            <p>Soluções tecnológicas modernas com o apoio do Bootstrap.</p>
-        </header>
+     <div class="container my-4 ">
+       <header class="text-center position-relative mb-5">
+        <h1 class="mb-2 text-primary">TechNova Solutions</h1>
+        <p>Soluções tecnológicas modernas com o apoio do Bootstrap.</p>
+       </header>
 
-        <!-- Seção de Cards -->
-         <!-- CARD 01 -->
+       <!--Seção de cards-->
         <section class="row mb-4">
+            <!--CARD 1-->
             <div class="col-12 col-md-4 mb-3">
                 <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Desenvolvimento Web</h5>
-                        <p class="card-text">Criação de Sites e sistemas web responsivos.</p>
-                        <img class="img-thumbnail mb-3" src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Serviço de Desenvolvimento Web">
-                        <button class=" btn btn-primary">Saiba Mais</button>
-                    </div>
+                   <div class="card-body">
+                      <h5>Desenvolvimento Web</h5>
+                      <p class="card-text">Criação de sites e sistemas web responsivos.</p>
+                      <img class="img-thumbnail mb-3" src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Serviço de Desenvolvimento Web">
+                      <button class="btn btn-primary">Saiba mais</button>
+                   </div>
                 </div>
             </div>
-
-            <!-- CARD 02 -->
+            <!--CARD 2-->
             <div class="col-12 col-md-4 mb-3">
                 <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Consultoria Web</h5>
-                        <p class="card-text">Orientação estratégica para soluções digitais.</p>
-                        <img class="img-thumbnail mb-3" src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Serviço de Consultoria Web">
-                        <button class=" btn btn-primary">Saiba Mais</button>
-                    </div>
+                   <div class="card-body">
+                      <h5>Consultoria Web</h5>
+                      <p class="card-text">Orientação estratégica para soluções digitais.</p>
+                      <img class="img-thumbnail mb-3" src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Serviço de Consultoria Web">
+                      <button class="btn btn-primary">Saiba mais</button>
+                   </div>
                 </div>
             </div>
-
-            <!-- CARD 03 -->
-             <div class="col-12 col-md-4 mb-3">
+            <!--CARD 3-->
+            <div class="col-12 col-md-4 mb-3">
                 <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Soluções Digitais</h5>
-                        <p class="card-text">Projetos personalizados para diferentes necessidades.</p>
-                        <img class="img-thumbnail mb-3" src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Serviço de Soluções Digitais">
-                        <button class=" btn btn-primary">Saiba Mais</button>
-                    </div>
+                   <div class="card-body">
+                      <h5>Soluções Digitais</h5>
+                      <p class="card-text">Projetos personalizados para diferentes necessidades.</p>
+                      <img class="img-thumbnail mb-3" src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Serviço de Soluções Digitais">
+                      <button class="btn btn-primary">Saiba mais</button>
+                   </div>
                 </div>
             </div>
         </section>
 
-        <!-- Alerta dispensável ("fechável") com Bootstrap -->
-         <div class="alert alert-warning alert-dismissible fade show text-center mb-5" role="alert">
-            Atenção: esta página é um exemplo didático utilizando Bootstrap.
+        <!--Alerta dispensavel (fechavel) com Bootstrap-->
+    <div class="alert alert-warning alert-dismissible fade show text-center mb-5" role="alert">Atenção: esta página é um exemplo didático utilizando Bootstrap.
             <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
         </div>
 
-    </div>
+        <!-- Formulário de contato -->
+         <section class="mb-5">
+            <h3 class="mb-3 border-bottom pb-2">Entre em Contato</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="nomeInput" class="form-label">
+                        Nome Completo:
+                    </label>
+                    <input type="text" class="form-control" id="nomeInput" placeholder="Digite seu nome">
+                </div>
+                <!--Email-->
+                <div class="mb-3">
+                    <label for="emailInput" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="Digite seu e-mail">
+                </div>
+                <!--Mensagem (caixa de texto)-->
+                <div class="mb-3">
+                    <label for="msgText" class="form-label">Mensagem</label>
+                   <textarea name="msgText" id="msgText" placeholder="Como podemos ajudar?" class="form-control" rows="3"></textarea>
+                </div>
+                <!-- Botão de envio (acinoa o modal) -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmacaoModal">Enviar Mensagem</button>
+            </form>
+         </section>
+     </div>
 
-    <!-- Importação do JavaScript do Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
-    <!-- Importação do Script para alterar o tema -->
-     <script src="script.js"></script>
+     <!-- Modal de alerta -->
+      <div class="modal fade" id="confirmacaoModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-tittle">Confirmar Envio</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body"> 
+              Deseja realmente enviar esta mensagem para a equipe da TechNova Solutions?
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Revisar</button>
+               <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Sim, enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+      <!--Importação do JavaScript do Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+     
+    <!--Importação do Script para alterar o tema-->
+    <script src="script.js"></script>
+    
+
 </body>
 </html>
